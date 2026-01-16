@@ -1,0 +1,675 @@
+{
+  "questions": {
+    "level_1": [
+      {
+        "question": "¿Qué significa accesibilidad web?",
+        "options": [
+          "Que el sitio cargue rápido",
+          "Que cualquiera pueda usar el sitio",
+          "Que tenga buen diseño",
+          "Que funcione solo en desktop"
+        ],
+        "answer": "Que cualquiera pueda usar el sitio",
+        "hint": "Incluye personas con discapacidad."
+      },
+      {
+        "question": "¿Qué significa a11y?",
+        "options": [
+          "Un framework",
+          "Una librería",
+          "Abreviatura de accessibility",
+          "Un estándar"
+        ],
+        "answer": "Abreviatura de accessibility",
+        "hint": "11 letras entre la a y la y."
+      },
+      {
+        "question": "¿Qué atributo describe imágenes?",
+        "options": [
+          "title",
+          "aria-label",
+          "alt",
+          "description"
+        ],
+        "answer": "alt",
+        "hint": "Muy importante para lectores de pantalla."
+      },
+      {
+        "question": "¿Para qué sirve el atributo alt?",
+        "options": [
+          "SEO",
+          "Decoración",
+          "Lectores de pantalla",
+          "Todas las anteriores"
+        ],
+        "answer": "Todas las anteriores",
+        "hint": "Especialmente accesibilidad."
+      },
+      {
+        "question": "¿Qué elemento HTML es semántico?",
+        "options": [
+          "<div>",
+          "<span>",
+          "<article>",
+          "<b>"
+        ],
+        "answer": "<article>",
+        "hint": "Tiene significado."
+      },
+      {
+        "question": "¿Qué tecnología usan personas con discapacidad visual?",
+        "options": [
+          "Mouse",
+          "Teclado",
+          "Lectores de pantalla",
+          "Touch"
+        ],
+        "answer": "Lectores de pantalla",
+        "hint": "Narran el contenido."
+      },
+      {
+        "question": "¿Qué atributo conecta label con input?",
+        "options": [
+          "id",
+          "for",
+          "name",
+          "aria-label"
+        ],
+        "answer": "for",
+        "hint": "Mejora formularios."
+      },
+      {
+        "question": "¿Qué color mejora accesibilidad?",
+        "options": [
+          "Colores brillantes",
+          "Alto contraste",
+          "Colores pastel",
+          "Colores suaves"
+        ],
+        "answer": "Alto contraste",
+        "hint": "Texto legible."
+      },
+      {
+        "question": "¿Qué tipo de navegación es esencial?",
+        "options": [
+          "Mouse",
+          "Touch",
+          "Teclado",
+          "Scroll"
+        ],
+        "answer": "Teclado",
+        "hint": "Usuarios sin mouse."
+      },
+      {
+        "question": "¿Qué tecla se usa para navegar?",
+        "options": [
+          "Enter",
+          "Shift",
+          "Tab",
+          "Ctrl"
+        ],
+        "answer": "Tab",
+        "hint": "Orden de foco."
+      },
+
+      {
+        "question": "¿Qué atributo indica idioma del documento?",
+        "options": [
+          "lang",
+          "language",
+          "locale",
+          "i18n"
+        ],
+        "answer": "lang",
+        "hint": "Ayuda a lectores."
+      },
+      {
+        "question": "¿Dónde se define el idioma?",
+        "options": [
+          "<head>",
+          "<body>",
+          "<html>",
+          "<meta>"
+        ],
+        "answer": "<html>",
+        "hint": "Atributo global."
+      },
+      {
+        "question": "¿Qué etiqueta representa navegación?",
+        "options": [
+          "<menu>",
+          "<nav>",
+          "<header>",
+          "<aside>"
+        ],
+        "answer": "<nav>",
+        "hint": "Menús principales."
+      },
+      {
+        "question": "¿Qué etiqueta representa el contenido principal?",
+        "options": [
+          "<main>",
+          "<section>",
+          "<article>",
+          "<body>"
+        ],
+        "answer": "<main>",
+        "hint": "Debe ser única."
+      },
+      {
+        "question": "¿Qué error afecta accesibilidad?",
+        "options": [
+          "Usar divs semánticos",
+          "Imágenes sin alt",
+          "Usar HTML5",
+          "Usar CSS Grid"
+        ],
+        "answer": "Imágenes sin alt",
+        "hint": "Muy común."
+      },
+      {
+        "question": "¿Qué elemento debe tener foco visible?",
+        "options": [
+          "Div",
+          "Botón",
+          "Texto",
+          "Imagen decorativa"
+        ],
+        "answer": "Botón",
+        "hint": "Navegación por teclado."
+      },
+      {
+        "question": "¿Qué atributo mejora botones personalizados?",
+        "options": [
+          "role",
+          "type",
+          "aria-label",
+          "tabindex"
+        ],
+        "answer": "role",
+        "hint": "Describe comportamiento."
+      },
+      {
+        "question": "¿Qué atributo define orden de foco?",
+        "options": [
+          "focus",
+          "order",
+          "tabindex",
+          "aria-focus"
+        ],
+        "answer": "tabindex",
+        "hint": "Usar con cuidado."
+      },
+      {
+        "question": "¿Qué es WCAG?",
+        "options": [
+          "Framework",
+          "Librería",
+          "Guía de accesibilidad",
+          "Lenguaje"
+        ],
+        "answer": "Guía de accesibilidad",
+        "hint": "Estándar oficial."
+      },
+      {
+        "question": "¿Qué significa WCAG?",
+        "options": [
+          "Web Content Accessibility Guidelines",
+          "Web Code Access Group",
+          "Wide Content Access Guide",
+          "Web Control Accessibility Group"
+        ],
+        "answer": "Web Content Accessibility Guidelines",
+        "hint": "Guías del W3C."
+      }
+    ],
+
+    "level_2": [
+      {
+        "question": "¿Cuáles son los 4 principios de WCAG?",
+        "options": [
+          "POUR",
+          "FAST",
+          "HTML",
+          "ARIA"
+        ],
+        "answer": "POUR",
+        "hint": "Perceivable, Operable, Understandable, Robust."
+      },
+      {
+        "question": "¿Qué principio asegura uso con teclado?",
+        "options": [
+          "Perceivable",
+          "Operable",
+          "Understandable",
+          "Robust"
+        ],
+        "answer": "Operable",
+        "hint": "Interacción."
+      },
+      {
+        "question": "¿Qué nivel WCAG es más común?",
+        "options": [
+          "A",
+          "AA",
+          "AAA",
+          "B"
+        ],
+        "answer": "AA",
+        "hint": "Requerido legalmente."
+      },
+      {
+        "question": "¿Qué ratio mínimo de contraste exige WCAG AA?",
+        "options": [
+          "2:1",
+          "3:1",
+          "4.5:1",
+          "7:1"
+        ],
+        "answer": "4.5:1",
+        "hint": "Texto normal."
+      },
+      {
+        "question": "¿Qué herramienta audita accesibilidad?",
+        "options": [
+          "Lighthouse",
+          "Webpack",
+          "Jest",
+          "Vite"
+        ],
+        "answer": "Lighthouse",
+        "hint": "Incluida en Chrome."
+      },
+      {
+        "question": "¿Para qué sirve aria-label?",
+        "options": [
+          "Estilos",
+          "SEO",
+          "Accesibilidad",
+          "Performance"
+        ],
+        "answer": "Accesibilidad",
+        "hint": "Describe elementos."
+      },
+      {
+        "question": "¿Cuándo usar ARIA?",
+        "options": [
+          "Siempre",
+          "Nunca",
+          "Cuando HTML no es suficiente",
+          "Solo en React"
+        ],
+        "answer": "Cuando HTML no es suficiente",
+        "hint": "Primero semántica."
+      },
+      {
+        "question": "¿Qué atributo describe estado?",
+        "options": [
+          "aria-hidden",
+          "aria-disabled",
+          "aria-checked",
+          "Todos"
+        ],
+        "answer": "Todos",
+        "hint": "ARIA states."
+      },
+      {
+        "question": "¿Qué atributo oculta a lectores?",
+        "options": [
+          "hidden",
+          "display:none",
+          "aria-hidden",
+          "opacity:0"
+        ],
+        "answer": "aria-hidden",
+        "hint": "Solo accesibilidad."
+      },
+      {
+        "question": "¿Qué elemento debe tener role=\"button\"?",
+        "options": [
+          "<button>",
+          "<div>",
+          "<span>",
+          "<input>"
+        ],
+        "answer": "<div>",
+        "hint": "Si simula botón."
+      },
+
+      {
+        "question": "¿Qué error rompe navegación por teclado?",
+        "options": [
+          "No usar tabindex",
+          "Eliminar outline",
+          "Usar button",
+          "Usar label"
+        ],
+        "answer": "Eliminar outline",
+        "hint": "Foco invisible."
+      },
+      {
+        "question": "¿Qué atributo anuncia cambios dinámicos?",
+        "options": [
+          "aria-live",
+          "aria-alert",
+          "aria-dynamic",
+          "aria-update"
+        ],
+        "answer": "aria-live",
+        "hint": "Contenido en tiempo real."
+      },
+      {
+        "question": "¿Qué valor anuncia cambios inmediatamente?",
+        "options": [
+          "polite",
+          "assertive",
+          "off",
+          "on"
+        ],
+        "answer": "assertive",
+        "hint": "Alta prioridad."
+      },
+      {
+        "question": "¿Qué atributo describe relación?",
+        "options": [
+          "aria-describedby",
+          "aria-related",
+          "aria-info",
+          "aria-ref"
+        ],
+        "answer": "aria-describedby",
+        "hint": "Texto adicional."
+      },
+      {
+        "question": "¿Qué control necesita label?",
+        "options": [
+          "button",
+          "input",
+          "div",
+          "span"
+        ],
+        "answer": "input",
+        "hint": "Formularios."
+      },
+      {
+        "question": "¿Qué elemento no es accesible por defecto?",
+        "options": [
+          "<button>",
+          "<a>",
+          "<input>",
+          "<div>"
+        ],
+        "answer": "<div>",
+        "hint": "No interactivo."
+      },
+      {
+        "question": "¿Qué técnica ayuda a saltar navegación?",
+        "options": [
+          "Skip link",
+          "Breadcrumb",
+          "Footer",
+          "Aside"
+        ],
+        "answer": "Skip link",
+        "hint": "Acceso rápido."
+      },
+      {
+        "question": "¿Qué problema causa placeholder sin label?",
+        "options": [
+          "Visual",
+          "Accesibilidad",
+          "SEO",
+          "Performance"
+        ],
+        "answer": "Accesibilidad",
+        "hint": "Desaparece al escribir."
+      },
+      {
+        "question": "¿Qué atributo define controles inválidos?",
+        "options": [
+          "aria-invalid",
+          "invalid",
+          "error",
+          "aria-error"
+        ],
+        "answer": "aria-invalid",
+        "hint": "Feedback."
+      },
+      {
+        "question": "¿Qué propiedad CSS afecta accesibilidad?",
+        "options": [
+          "outline",
+          "color",
+          "display",
+          "Todas"
+        ],
+        "answer": "Todas",
+        "hint": "Visual y navegación."
+      }
+    ],
+
+    "level_3": [
+      {
+        "question": "¿Qué significa Perceivable?",
+        "options": [
+          "Interactuable",
+          "Comprensible",
+          "Detectable por sentidos",
+          "Compatible"
+        ],
+        "answer": "Detectable por sentidos",
+        "hint": "Texto alternativo."
+      },
+      {
+        "question": "¿Qué significa Robust?",
+        "options": [
+          "Bonito",
+          "Compatible con tecnologías",
+          "Rápido",
+          "Seguro"
+        ],
+        "answer": "Compatible con tecnologías",
+        "hint": "Futuro-proof."
+      },
+      {
+        "question": "¿Qué error común con ARIA?",
+        "options": [
+          "No usarlo",
+          "Usarlo de más",
+          "Seguir WCAG",
+          "Usar HTML semántico"
+        ],
+        "answer": "Usarlo de más",
+        "hint": "ARIA no reemplaza HTML."
+      },
+      {
+        "question": "¿Qué rol define alertas?",
+        "options": [
+          "alert",
+          "dialog",
+          "status",
+          "message"
+        ],
+        "answer": "alert",
+        "hint": "Lectores lo anuncian."
+      },
+      {
+        "question": "¿Qué patrón define modales accesibles?",
+        "options": [
+          "Focus trap",
+          "Scroll lock",
+          "Z-index",
+          "Overlay"
+        ],
+        "answer": "Focus trap",
+        "hint": "No escapar con tab."
+      },
+      {
+        "question": "¿Qué elemento debe tener aria-modal?",
+        "options": [
+          "Tooltip",
+          "Modal",
+          "Dropdown",
+          "Toast"
+        ],
+        "answer": "Modal",
+        "hint": "Interrumpe flujo."
+      },
+      {
+        "question": "¿Qué problema causa tabindex > 0?",
+        "options": [
+          "Nada",
+          "Orden inconsistente",
+          "Mejor UX",
+          "Más accesible"
+        ],
+        "answer": "Orden inconsistente",
+        "hint": "Evitarlo."
+      },
+      {
+        "question": "¿Qué API prueba accesibilidad?",
+        "options": [
+          "axe",
+          "eslint",
+          "prettier",
+          "jest"
+        ],
+        "answer": "axe",
+        "hint": "Automatización."
+      },
+      {
+        "question": "¿Qué tipo de test es manual?",
+        "options": [
+          "Lighthouse",
+          "axe",
+          "Navegación con teclado",
+          "CI"
+        ],
+        "answer": "Navegación con teclado",
+        "hint": "Imprescindible."
+      },
+      {
+        "question": "¿Qué discapacidad afecta contraste?",
+        "options": [
+          "Visual",
+          "Auditiva",
+          "Motriz",
+          "Cognitiva"
+        ],
+        "answer": "Visual",
+        "hint": "Daltonismo."
+      },
+
+      {
+        "question": "¿Qué elemento debe ser focusable?",
+        "options": [
+          "Texto",
+          "Imagen decorativa",
+          "Control interactivo",
+          "Div"
+        ],
+        "answer": "Control interactivo",
+        "hint": "Botones, inputs."
+      },
+      {
+        "question": "¿Qué patrón mejora formularios largos?",
+        "options": [
+          "Fieldset + legend",
+          "Divs",
+          "Spans",
+          "Placeholders"
+        ],
+        "answer": "Fieldset + legend",
+        "hint": "Agrupa campos."
+      },
+      {
+        "question": "¿Qué error afecta lectores?",
+        "options": [
+          "DOM desordenado",
+          "Mucho CSS",
+          "Grid",
+          "Flex"
+        ],
+        "answer": "DOM desordenado",
+        "hint": "Orden lógico."
+      },
+      {
+        "question": "¿Qué práctica mejora accesibilidad cognitiva?",
+        "options": [
+          "Lenguaje claro",
+          "Animaciones",
+          "Colores fuertes",
+          "Contenido largo"
+        ],
+        "answer": "Lenguaje claro",
+        "hint": "Simplicidad."
+      },
+      {
+        "question": "¿Qué animaciones deben evitarse?",
+        "options": [
+          "Sutiles",
+          "Continuas",
+          "Opcionales",
+          "Lentas"
+        ],
+        "answer": "Continuas",
+        "hint": "Mareos."
+      },
+      {
+        "question": "¿Qué media query respeta preferencias?",
+        "options": [
+          "prefers-reduced-motion",
+          "motion-off",
+          "reduce-motion",
+          "animation"
+        ],
+        "answer": "prefers-reduced-motion",
+        "hint": "Accesibilidad moderna."
+      },
+      {
+        "question": "¿Qué error rompe WCAG?",
+        "options": [
+          "Texto justificado",
+          "Contenido parpadeante",
+          "Responsive design",
+          "HTML semántico"
+        ],
+        "answer": "Contenido parpadeante",
+        "hint": "Convulsiones."
+      },
+      {
+        "question": "¿Qué atributo mejora links ambiguos?",
+        "options": [
+          "aria-label",
+          "title",
+          "href",
+          "target"
+        ],
+        "answer": "aria-label",
+        "hint": "Ej: \"Leer más\"."
+      },
+      {
+        "question": "¿Qué nivel WCAG es más estricto?",
+        "options": [
+          "A",
+          "AA",
+          "AAA",
+          "B"
+        ],
+        "answer": "AAA",
+        "hint": "Difícil de cumplir."
+      },
+      {
+        "question": "¿Mayor error en accesibilidad?",
+        "options": [
+          "No probar",
+          "No usar ARIA",
+          "No usar frameworks",
+          "No usar CSS"
+        ],
+        "answer": "No probar",
+        "hint": "Manual + automático."
+      }
+    ]
+  }
+}

@@ -1,0 +1,675 @@
+{
+  "questions": {
+    "level_1": [
+      {
+        "question": "¿Qué significa CSS?",
+        "options": [
+          "Cascading Style Sheets",
+          "Computer Style Sheets",
+          "Creative Style System",
+          "Colorful Style Sheets"
+        ],
+        "answer": "Cascading Style Sheets",
+        "hint": "Define estilos visuales."
+      },
+      {
+        "question": "¿Dónde se puede escribir CSS?",
+        "options": [
+          "Inline",
+          "Interno",
+          "Externo",
+          "Todas las anteriores"
+        ],
+        "answer": "Todas las anteriores",
+        "hint": "Hay 3 formas principales."
+      },
+      {
+        "question": "¿Qué propiedad cambia el color del texto?",
+        "options": [
+          "background-color",
+          "font-color",
+          "color",
+          "text-color"
+        ],
+        "answer": "color",
+        "hint": "Muy básica."
+      },
+      {
+        "question": "¿Qué propiedad cambia el tamaño del texto?",
+        "options": [
+          "text-size",
+          "font-size",
+          "size",
+          "font-style"
+        ],
+        "answer": "font-size",
+        "hint": "Usa px, em, rem."
+      },
+      {
+        "question": "¿Qué selector apunta a una clase?",
+        "options": [
+          "#",
+          ".",
+          "*",
+          "@"
+        ],
+        "answer": ".",
+        "hint": "Se usa mucho en HTML."
+      },
+      {
+        "question": "¿Qué selector apunta a un id?",
+        "options": [
+          ".",
+          "#",
+          "*",
+          "%"
+        ],
+        "answer": "#",
+        "hint": "Debe ser único."
+      },
+      {
+        "question": "¿Qué propiedad cambia el color de fondo?",
+        "options": [
+          "color",
+          "background",
+          "background-color",
+          "bg-color"
+        ],
+        "answer": "background-color",
+        "hint": "Solo afecta el fondo."
+      },
+      {
+        "question": "¿Qué unidad es relativa al tamaño del texto raíz?",
+        "options": [
+          "px",
+          "em",
+          "rem",
+          "%"
+        ],
+        "answer": "rem",
+        "hint": "Depende del html."
+      },
+      {
+        "question": "¿Qué propiedad centra texto horizontalmente?",
+        "options": [
+          "align",
+          "text-align",
+          "center",
+          "justify"
+        ],
+        "answer": "text-align",
+        "hint": "Funciona con center."
+      },
+      {
+        "question": "¿Qué propiedad controla el espacio interno?",
+        "options": [
+          "margin",
+          "padding",
+          "gap",
+          "space"
+        ],
+        "answer": "padding",
+        "hint": "Espacio dentro del elemento."
+      },
+
+      {
+        "question": "¿Qué propiedad controla el espacio externo?",
+        "options": [
+          "padding",
+          "border",
+          "margin",
+          "gap"
+        ],
+        "answer": "margin",
+        "hint": "Espacio fuera del elemento."
+      },
+      {
+        "question": "¿Qué propiedad agrega un borde?",
+        "options": [
+          "outline",
+          "border",
+          "stroke",
+          "line"
+        ],
+        "answer": "border",
+        "hint": "Tiene ancho, estilo y color."
+      },
+      {
+        "question": "¿Qué valor hace un elemento invisible pero ocupando espacio?",
+        "options": [
+          "display: none",
+          "opacity: 0",
+          "visibility: hidden",
+          "hidden"
+        ],
+        "answer": "visibility: hidden",
+        "hint": "Sigue en el layout."
+      },
+      {
+        "question": "¿Qué valor elimina un elemento del layout?",
+        "options": [
+          "visibility: hidden",
+          "opacity: 0",
+          "display: none",
+          "position: absolute"
+        ],
+        "answer": "display: none",
+        "hint": "No ocupa espacio."
+      },
+      {
+        "question": "¿Qué propiedad cambia la tipografía?",
+        "options": [
+          "font-style",
+          "font-family",
+          "font-type",
+          "text-font"
+        ],
+        "answer": "font-family",
+        "hint": "Acepta varias fuentes."
+      },
+      {
+        "question": "¿Qué valor hace el texto en negritas?",
+        "options": [
+          "font-style: bold",
+          "font-weight: bold",
+          "text-bold",
+          "weight: bold"
+        ],
+        "answer": "font-weight: bold",
+        "hint": "También acepta números."
+      },
+      {
+        "question": "¿Qué selector aplica a todos los elementos?",
+        "options": [
+          "*",
+          "body",
+          "html",
+          "all"
+        ],
+        "answer": "*",
+        "hint": "Selector universal."
+      },
+      {
+        "question": "¿Qué propiedad controla el ancho?",
+        "options": [
+          "size",
+          "width",
+          "length",
+          "max"
+        ],
+        "answer": "width",
+        "hint": "Puede ser %, px, vw."
+      },
+      {
+        "question": "¿Qué propiedad controla la altura?",
+        "options": [
+          "height",
+          "size",
+          "length",
+          "max-height"
+        ],
+        "answer": "height",
+        "hint": "Cuidado con overflow."
+      },
+      {
+        "question": "¿Qué propiedad redondea esquinas?",
+        "options": [
+          "corner-radius",
+          "border-radius",
+          "round",
+          "radius"
+        ],
+        "answer": "border-radius",
+        "hint": "Muy usada en UI."
+      }
+    ],
+
+    "level_2": [
+      {
+        "question": "¿Qué modelo define el box model?",
+        "options": [
+          "margin, padding, border, content",
+          "padding, width, height",
+          "border, shadow, outline",
+          "content, size, gap"
+        ],
+        "answer": "margin, padding, border, content",
+        "hint": "Es fundamental."
+      },
+      {
+        "question": "¿Qué propiedad cambia el modelo de caja?",
+        "options": [
+          "box-type",
+          "box-sizing",
+          "display",
+          "overflow"
+        ],
+        "answer": "box-sizing",
+        "hint": "Muy usada con border-box."
+      },
+      {
+        "question": "¿Qué valor incluye padding y border en el ancho?",
+        "options": [
+          "content-box",
+          "border-box",
+          "box-fit",
+          "auto"
+        ],
+        "answer": "border-box",
+        "hint": "Más predecible."
+      },
+      {
+        "question": "¿Qué display crea un flex container?",
+        "options": [
+          "block",
+          "inline",
+          "flex",
+          "grid"
+        ],
+        "answer": "flex",
+        "hint": "Flexbox."
+      },
+      {
+        "question": "¿Qué propiedad alinea elementos horizontalmente en flex?",
+        "options": [
+          "align-items",
+          "justify-content",
+          "flex-align",
+          "content-align"
+        ],
+        "answer": "justify-content",
+        "hint": "Eje principal."
+      },
+      {
+        "question": "¿Qué propiedad alinea elementos verticalmente en flex?",
+        "options": [
+          "justify-content",
+          "align-items",
+          "vertical-align",
+          "flex-align"
+        ],
+        "answer": "align-items",
+        "hint": "Eje cruzado."
+      },
+      {
+        "question": "¿Qué display crea un grid container?",
+        "options": [
+          "flex",
+          "block",
+          "grid",
+          "inline-grid"
+        ],
+        "answer": "grid",
+        "hint": "Layout bidimensional."
+      },
+      {
+        "question": "¿Qué propiedad define columnas en grid?",
+        "options": [
+          "grid-columns",
+          "grid-template-columns",
+          "grid-cols",
+          "columns"
+        ],
+        "answer": "grid-template-columns",
+        "hint": "Usa fr."
+      },
+      {
+        "question": "¿Qué unidad es relativa al viewport?",
+        "options": [
+          "em",
+          "rem",
+          "vh",
+          "pt"
+        ],
+        "answer": "vh",
+        "hint": "Altura de pantalla."
+      },
+      {
+        "question": "¿Qué pseudo-clase se activa al pasar el mouse?",
+        "options": [
+          ":active",
+          ":hover",
+          ":focus",
+          ":visited"
+        ],
+        "answer": ":hover",
+        "hint": "Interacción básica."
+      },
+
+      {
+        "question": "¿Qué pseudo-clase se activa al enfocar un input?",
+        "options": [
+          ":hover",
+          ":active",
+          ":focus",
+          ":checked"
+        ],
+        "answer": ":focus",
+        "hint": "Accesibilidad."
+      },
+      {
+        "question": "¿Qué propiedad controla el desbordamiento?",
+        "options": [
+          "overflow",
+          "wrap",
+          "clip",
+          "hidden"
+        ],
+        "answer": "overflow",
+        "hint": "hidden, auto, scroll."
+      },
+      {
+        "question": "¿Qué posición saca un elemento del flujo?",
+        "options": [
+          "relative",
+          "static",
+          "absolute",
+          "sticky"
+        ],
+        "answer": "absolute",
+        "hint": "Se posiciona respecto a su contenedor."
+      },
+      {
+        "question": "¿Qué valor posiciona respecto al viewport?",
+        "options": [
+          "absolute",
+          "relative",
+          "fixed",
+          "sticky"
+        ],
+        "answer": "fixed",
+        "hint": "Ideal para headers."
+      },
+      {
+        "question": "¿Qué propiedad controla el orden en flex?",
+        "options": [
+          "order",
+          "index",
+          "z-index",
+          "position"
+        ],
+        "answer": "order",
+        "hint": "Solo en flex."
+      },
+      {
+        "question": "¿Qué propiedad controla capas?",
+        "options": [
+          "order",
+          "layer",
+          "z-index",
+          "depth"
+        ],
+        "answer": "z-index",
+        "hint": "Funciona con position."
+      },
+      {
+        "question": "¿Qué propiedad agrega sombra?",
+        "options": [
+          "shadow",
+          "box-shadow",
+          "text-shadow",
+          "outline"
+        ],
+        "answer": "box-shadow",
+        "hint": "Muy usada en cards."
+      },
+      {
+        "question": "¿Qué propiedad transforma elementos?",
+        "options": [
+          "translate",
+          "scale",
+          "transform",
+          "rotate"
+        ],
+        "answer": "transform",
+        "hint": "Incluye rotate y scale."
+      },
+      {
+        "question": "¿Qué propiedad agrega transición?",
+        "options": [
+          "animation",
+          "transition",
+          "effect",
+          "delay"
+        ],
+        "answer": "transition",
+        "hint": "Suaviza cambios."
+      },
+      {
+        "question": "¿Qué propiedad define duración de transición?",
+        "options": [
+          "transition-time",
+          "duration",
+          "transition-duration",
+          "delay"
+        ],
+        "answer": "transition-duration",
+        "hint": "Usa segundos."
+      }
+    ],
+
+    "level_3": [
+      {
+        "question": "¿Qué significa cascada en CSS?",
+        "options": [
+          "Orden de archivos",
+          "Prioridad de reglas",
+          "Uso de colores",
+          "Animaciones"
+        ],
+        "answer": "Prioridad de reglas",
+        "hint": "Conflictos de estilos."
+      },
+      {
+        "question": "¿Qué tiene mayor especificidad?",
+        "options": [
+          "Elemento",
+          "Clase",
+          "ID",
+          "Selector universal"
+        ],
+        "answer": "ID",
+        "hint": "Muy específico."
+      },
+      {
+        "question": "¿Qué fuerza una regla CSS?",
+        "options": [
+          "!important",
+          "!force",
+          "!override",
+          "!priority"
+        ],
+        "answer": "!important",
+        "hint": "Evitar usarlo."
+      },
+      {
+        "question": "¿Qué selector selecciona hijos directos?",
+        "options": [
+          " ",
+          ">",
+          "+",
+          "~"
+        ],
+        "answer": ">",
+        "hint": "No nietos."
+      },
+      {
+        "question": "¿Qué selector selecciona el siguiente hermano?",
+        "options": [
+          "+",
+          "~",
+          ">",
+          "*"
+        ],
+        "answer": "+",
+        "hint": "Sibling inmediato."
+      },
+      {
+        "question": "¿Qué función crea layouts fluidos en grid?",
+        "options": [
+          "auto-fit",
+          "minmax",
+          "repeat",
+          "Todas"
+        ],
+        "answer": "Todas",
+        "hint": "Grid avanzado."
+      },
+      {
+        "question": "¿Qué unidad es relativa al contenedor?",
+        "options": [
+          "vw",
+          "vh",
+          "%",
+          "rem"
+        ],
+        "answer": "%",
+        "hint": "Depende del padre."
+      },
+      {
+        "question": "¿Qué propiedad optimiza animaciones?",
+        "options": [
+          "will-change",
+          "optimize",
+          "performance",
+          "render"
+        ],
+        "answer": "will-change",
+        "hint": "Usar con cuidado."
+      },
+      {
+        "question": "¿Qué pseudo-elemento selecciona la primera línea?",
+        "options": [
+          "::first-letter",
+          "::first-line",
+          ":first-line",
+          "::line"
+        ],
+        "answer": "::first-line",
+        "hint": "Pseudo-elemento."
+      },
+      {
+        "question": "¿Qué pseudo-elemento inserta contenido?",
+        "options": [
+          "::before",
+          "::after",
+          "::content",
+          "::insert"
+        ],
+        "answer": "::before",
+        "hint": "Requiere content."
+      },
+
+      {
+        "question": "¿Qué propiedad controla scroll suave?",
+        "options": [
+          "scroll-behavior",
+          "smooth-scroll",
+          "scroll",
+          "overflow"
+        ],
+        "answer": "scroll-behavior",
+        "hint": "UX."
+      },
+      {
+        "question": "¿Qué media query apunta a dark mode?",
+        "options": [
+          "prefers-color-scheme",
+          "color-mode",
+          "dark-mode",
+          "theme"
+        ],
+        "answer": "prefers-color-scheme",
+        "hint": "Accesibilidad."
+      },
+      {
+        "question": "¿Qué propiedad limita el tamaño del texto?",
+        "options": [
+          "clamp()",
+          "limit()",
+          "max-font",
+          "font-range"
+        ],
+        "answer": "clamp()",
+        "hint": "CSS moderno."
+      },
+      {
+        "question": "¿Qué API permite variables CSS?",
+        "options": [
+          "var()",
+          "const",
+          "--variable",
+          "Ambas"
+        ],
+        "answer": "Ambas",
+        "hint": "Custom properties."
+      },
+      {
+        "question": "¿Qué selector es más performante?",
+        "options": [
+          "ID",
+          "Clase",
+          "Elemento",
+          "Universal"
+        ],
+        "answer": "Clase",
+        "hint": "Buenas prácticas."
+      },
+      {
+        "question": "¿Qué layout es mejor para 2 dimensiones?",
+        "options": [
+          "Flexbox",
+          "Grid",
+          "Float",
+          "Position"
+        ],
+        "answer": "Grid",
+        "hint": "Filas y columnas."
+      },
+      {
+        "question": "¿Qué valor hace sticky efectivo?",
+        "options": [
+          "top",
+          "z-index",
+          "display",
+          "overflow"
+        ],
+        "answer": "top",
+        "hint": "Necesario."
+      },
+      {
+        "question": "¿Qué propiedad evita selección de texto?",
+        "options": [
+          "user-select",
+          "select",
+          "no-select",
+          "pointer-events"
+        ],
+        "answer": "user-select",
+        "hint": "UX."
+      },
+      {
+        "question": "¿Qué propiedad desactiva interacciones?",
+        "options": [
+          "user-select",
+          "pointer-events",
+          "cursor",
+          "disabled"
+        ],
+        "answer": "pointer-events",
+        "hint": "Muy útil."
+      },
+      {
+        "question": "¿Cuál es el mayor error en CSS moderno?",
+        "options": [
+          "No usar variables",
+          "Abusar de !important",
+          "No usar grid",
+          "Usar px"
+        ],
+        "answer": "Abusar de !important",
+        "hint": "Mala práctica."
+      }
+    ]
+  }
+}

@@ -1,0 +1,675 @@
+{
+  "questions": {
+    "level_1": [
+      {
+        "question": "¿Qué es JavaScript?",
+        "options": [
+          "Un lenguaje de marcado",
+          "Un lenguaje de programación",
+          "Un framework",
+          "Una base de datos"
+        ],
+        "answer": "Un lenguaje de programación",
+        "hint": "Se ejecuta en el navegador y en el servidor."
+      },
+      {
+        "question": "¿Cómo se declara una variable?",
+        "options": [
+          "var",
+          "let",
+          "const",
+          "Todas las anteriores"
+        ],
+        "answer": "Todas las anteriores",
+        "hint": "Depende del alcance."
+      },
+      {
+        "question": "¿Qué palabra clave NO permite reasignación?",
+        "options": [
+          "var",
+          "let",
+          "const",
+          "define"
+        ],
+        "answer": "const",
+        "hint": "No cambia la referencia."
+      },
+      {
+        "question": "¿Qué tipo de dato NO existe en JS?",
+        "options": [
+          "string",
+          "number",
+          "boolean",
+          "float"
+        ],
+        "answer": "float",
+        "hint": "Los números son un solo tipo."
+      },
+      {
+        "question": "¿Cómo se escribe un comentario de una línea?",
+        "options": [
+          "<!-- -->",
+          "//",
+          "/* */",
+          "#"
+        ],
+        "answer": "//",
+        "hint": "Muy común."
+      },
+      {
+        "question": "¿Qué operador compara valor y tipo?",
+        "options": [
+          "==",
+          "!=",
+          "===",
+          "="
+        ],
+        "answer": "===",
+        "hint": "Evita coerción."
+      },
+      {
+        "question": "¿Cuál es el valor de typeof null?",
+        "options": [
+          "null",
+          "undefined",
+          "object",
+          "number"
+        ],
+        "answer": "object",
+        "hint": "Es un bug histórico."
+      },
+      {
+        "question": "¿Qué valor indica ausencia intencional?",
+        "options": [
+          "null",
+          "undefined",
+          "NaN",
+          "false"
+        ],
+        "answer": "null",
+        "hint": "Asignado manualmente."
+      },
+      {
+        "question": "¿Qué método muestra algo en consola?",
+        "options": [
+          "console.print",
+          "console.log",
+          "print",
+          "log"
+        ],
+        "answer": "console.log",
+        "hint": "Debug básico."
+      },
+      {
+        "question": "¿Qué estructura repite código?",
+        "options": [
+          "if",
+          "switch",
+          "for",
+          "try"
+        ],
+        "answer": "for",
+        "hint": "Loop clásico."
+      },
+
+      {
+        "question": "¿Qué estructura evalúa condiciones?",
+        "options": [
+          "for",
+          "while",
+          "if",
+          "loop"
+        ],
+        "answer": "if",
+        "hint": "Control de flujo."
+      },
+      {
+        "question": "¿Qué método convierte texto a número?",
+        "options": [
+          "Number()",
+          "parseInt()",
+          "parseFloat()",
+          "Todas las anteriores"
+        ],
+        "answer": "Todas las anteriores",
+        "hint": "Cuidado con NaN."
+      },
+      {
+        "question": "¿Qué valor representa un número inválido?",
+        "options": [
+          "null",
+          "undefined",
+          "NaN",
+          "false"
+        ],
+        "answer": "NaN",
+        "hint": "Not a Number."
+      },
+      {
+        "question": "¿Qué operador se usa para concatenar strings?",
+        "options": [
+          "+",
+          "&",
+          ".",
+          ","
+        ],
+        "answer": "+",
+        "hint": "También suma números."
+      },
+      {
+        "question": "¿Qué método obtiene la longitud de un string?",
+        "options": [
+          "length()",
+          "size",
+          "length",
+          "count()"
+        ],
+        "answer": "length",
+        "hint": "Es una propiedad."
+      },
+      {
+        "question": "¿Qué tipo de función es () => {}?",
+        "options": [
+          "Función normal",
+          "Arrow function",
+          "Callback",
+          "Async function"
+        ],
+        "answer": "Arrow function",
+        "hint": "Sintaxis moderna."
+      },
+      {
+        "question": "¿Qué palabra clave retorna un valor?",
+        "options": [
+          "break",
+          "continue",
+          "return",
+          "yield"
+        ],
+        "answer": "return",
+        "hint": "Sale de la función."
+      },
+      {
+        "question": "¿Qué método agrega un elemento al final de un array?",
+        "options": [
+          "push",
+          "pop",
+          "shift",
+          "unshift"
+        ],
+        "answer": "push",
+        "hint": "Modifica el array."
+      },
+      {
+        "question": "¿Qué método elimina el último elemento de un array?",
+        "options": [
+          "pop",
+          "shift",
+          "splice",
+          "slice"
+        ],
+        "answer": "pop",
+        "hint": "Devuelve el elemento."
+      },
+      {
+        "question": "¿Qué palabra clave crea una función?",
+        "options": [
+          "function",
+          "func",
+          "fn",
+          "method"
+        ],
+        "answer": "function",
+        "hint": "Forma clásica."
+      }
+    ],
+
+    "level_2": [
+      {
+        "question": "¿Qué es el scope?",
+        "options": [
+          "Visibilidad de variables",
+          "Tipo de dato",
+          "Evento",
+          "Método"
+        ],
+        "answer": "Visibilidad de variables",
+        "hint": "Global o local."
+      },
+      {
+        "question": "¿Qué scope tiene let?",
+        "options": [
+          "Global",
+          "Función",
+          "Bloque",
+          "Módulo"
+        ],
+        "answer": "Bloque",
+        "hint": "Introducido en ES6."
+      },
+      {
+        "question": "¿Qué es un callback?",
+        "options": [
+          "Una promesa",
+          "Una función pasada como argumento",
+          "Un evento",
+          "Un error"
+        ],
+        "answer": "Una función pasada como argumento",
+        "hint": "Muy común en async."
+      },
+      {
+        "question": "¿Qué método recorre un array?",
+        "options": [
+          "map",
+          "filter",
+          "forEach",
+          "Todos"
+        ],
+        "answer": "Todos",
+        "hint": "Iteración funcional."
+      },
+      {
+        "question": "¿Qué método crea un nuevo array?",
+        "options": [
+          "map",
+          "push",
+          "pop",
+          "sort"
+        ],
+        "answer": "map",
+        "hint": "No muta el original."
+      },
+      {
+        "question": "¿Qué método filtra elementos?",
+        "options": [
+          "map",
+          "reduce",
+          "filter",
+          "find"
+        ],
+        "answer": "filter",
+        "hint": "Devuelve array."
+      },
+      {
+        "question": "¿Qué método reduce un array a un valor?",
+        "options": [
+          "map",
+          "reduce",
+          "filter",
+          "some"
+        ],
+        "answer": "reduce",
+        "hint": "Muy poderoso."
+      },
+      {
+        "question": "¿Qué es una promesa?",
+        "options": [
+          "Un callback",
+          "Un objeto async",
+          "Un evento",
+          "Una función"
+        ],
+        "answer": "Un objeto async",
+        "hint": "Tiene estados."
+      },
+      {
+        "question": "¿Estados de una promesa?",
+        "options": [
+          "pending, fulfilled, rejected",
+          "start, success, error",
+          "loading, done",
+          "resolve, reject"
+        ],
+        "answer": "pending, fulfilled, rejected",
+        "hint": "Ciclo de vida."
+      },
+      {
+        "question": "¿Qué palabra clave maneja errores?",
+        "options": [
+          "catch",
+          "error",
+          "throw",
+          "try"
+        ],
+        "answer": "try",
+        "hint": "Se combina con catch."
+      },
+
+      {
+        "question": "¿Qué operador copia propiedades?",
+        "options": [
+          "spread (...)",
+          "rest (...)",
+          "assign",
+          "copy"
+        ],
+        "answer": "spread (...)",
+        "hint": "ES6."
+      },
+      {
+        "question": "¿Qué es destructuring?",
+        "options": [
+          "Eliminar variables",
+          "Extraer valores",
+          "Romper objetos",
+          "Copiar arrays"
+        ],
+        "answer": "Extraer valores",
+        "hint": "Muy común en React."
+      },
+      {
+        "question": "¿Qué objeto representa el navegador?",
+        "options": [
+          "document",
+          "window",
+          "navigator",
+          "screen"
+        ],
+        "answer": "window",
+        "hint": "Objeto global."
+      },
+      {
+        "question": "¿Qué método selecciona un elemento?",
+        "options": [
+          "getElement",
+          "querySelector",
+          "select",
+          "find"
+        ],
+        "answer": "querySelector",
+        "hint": "Usa CSS selectors."
+      },
+      {
+        "question": "¿Qué evento se dispara al cargar la página?",
+        "options": [
+          "load",
+          "ready",
+          "DOMContentLoaded",
+          "start"
+        ],
+        "answer": "DOMContentLoaded",
+        "hint": "DOM listo."
+      },
+      {
+        "question": "¿Qué palabra clave crea una clase?",
+        "options": [
+          "class",
+          "object",
+          "constructor",
+          "prototype"
+        ],
+        "answer": "class",
+        "hint": "Sintaxis ES6."
+      },
+      {
+        "question": "¿Qué método convierte JSON a objeto?",
+        "options": [
+          "JSON.parse",
+          "JSON.stringify",
+          "parseJSON",
+          "toObject"
+        ],
+        "answer": "JSON.parse",
+        "hint": "String → objeto."
+      },
+      {
+        "question": "¿Qué método convierte objeto a JSON?",
+        "options": [
+          "JSON.parse",
+          "JSON.stringify",
+          "toJSON",
+          "stringify"
+        ],
+        "answer": "JSON.stringify",
+        "hint": "Objeto → string."
+      },
+      {
+        "question": "¿Qué es hoisting?",
+        "options": [
+          "Elevación de declaraciones",
+          "Async execution",
+          "Scope",
+          "Closures"
+        ],
+        "answer": "Elevación de declaraciones",
+        "hint": "var se eleva."
+      },
+      {
+        "question": "¿Qué palabra clave evita hoisting peligroso?",
+        "options": [
+          "var",
+          "let",
+          "function",
+          "this"
+        ],
+        "answer": "let",
+        "hint": "TDZ."
+      }
+    ],
+
+    "level_3": [
+      {
+        "question": "¿Qué es un closure?",
+        "options": [
+          "Una función cerrada",
+          "Acceso a variables externas",
+          "Un error",
+          "Una promesa"
+        ],
+        "answer": "Acceso a variables externas",
+        "hint": "Scope + función."
+      },
+      {
+        "question": "¿Qué es el event loop?",
+        "options": [
+          "Un loop",
+          "Manejo de async",
+          "Un thread",
+          "Un callback"
+        ],
+        "answer": "Manejo de async",
+        "hint": "Single thread."
+      },
+      {
+        "question": "¿Qué va primero?",
+        "options": [
+          "Macrotasks",
+          "Microtasks",
+          "Timers",
+          "Events"
+        ],
+        "answer": "Microtasks",
+        "hint": "Promises."
+      },
+      {
+        "question": "¿Qué método agenda una microtask?",
+        "options": [
+          "setTimeout",
+          "Promise.then",
+          "setInterval",
+          "requestAnimationFrame"
+        ],
+        "answer": "Promise.then",
+        "hint": "Alta prioridad."
+      },
+      {
+        "question": "¿Qué palabra clave maneja async?",
+        "options": [
+          "await",
+          "async",
+          "promise",
+          "Todas"
+        ],
+        "answer": "Todas",
+        "hint": "Async / await."
+      },
+      {
+        "question": "¿Qué es currying?",
+        "options": [
+          "Función con múltiples args",
+          "Funciones parciales",
+          "Async pattern",
+          "Loop"
+        ],
+        "answer": "Funciones parciales",
+        "hint": "Programación funcional."
+      },
+      {
+        "question": "¿Qué es debounce?",
+        "options": [
+          "Retrasar ejecución",
+          "Ejecutar muchas veces",
+          "Cancelar promesas",
+          "Optimizar CSS"
+        ],
+        "answer": "Retrasar ejecución",
+        "hint": "Inputs, scroll."
+      },
+      {
+        "question": "¿Qué es throttle?",
+        "options": [
+          "Limitar frecuencia",
+          "Cancelar eventos",
+          "Ejecutar una vez",
+          "Promesa"
+        ],
+        "answer": "Limitar frecuencia",
+        "hint": "Scroll, resize."
+      },
+      {
+        "question": "¿Qué es deep copy?",
+        "options": [
+          "Copia superficial",
+          "Copia completa",
+          "Referencia",
+          "Mutación"
+        ],
+        "answer": "Copia completa",
+        "hint": "Objetos anidados."
+      },
+      {
+        "question": "¿Qué método NO muta arrays?",
+        "options": [
+          "map",
+          "splice",
+          "sort",
+          "reverse"
+        ],
+        "answer": "map",
+        "hint": "Inmutable."
+      },
+
+      {
+        "question": "¿Qué patrón usa módulos?",
+        "options": [
+          "Module pattern",
+          "Observer",
+          "Singleton",
+          "Factory"
+        ],
+        "answer": "Module pattern",
+        "hint": "Encapsulación."
+      },
+      {
+        "question": "¿Qué exporta ES Modules?",
+        "options": [
+          "require",
+          "module.exports",
+          "export",
+          "define"
+        ],
+        "answer": "export",
+        "hint": "Frontend moderno."
+      },
+      {
+        "question": "¿Qué importa ES Modules?",
+        "options": [
+          "require",
+          "import",
+          "include",
+          "use"
+        ],
+        "answer": "import",
+        "hint": "Sintaxis moderna."
+      },
+      {
+        "question": "¿Qué objeto maneja fechas?",
+        "options": [
+          "Date",
+          "Time",
+          "Moment",
+          "Day"
+        ],
+        "answer": "Date",
+        "hint": "Nativo."
+      },
+      {
+        "question": "¿Qué es NaN === NaN?",
+        "options": [
+          "true",
+          "false",
+          "undefined",
+          "error"
+        ],
+        "answer": "false",
+        "hint": "Usa Number.isNaN."
+      },
+      {
+        "question": "¿Qué método evalúa código?",
+        "options": [
+          "eval",
+          "parse",
+          "execute",
+          "run"
+        ],
+        "answer": "eval",
+        "hint": "Evitar usar."
+      },
+      {
+        "question": "¿Qué significa JS es single-thread?",
+        "options": [
+          "Una tarea a la vez",
+          "Lento",
+          "Sin async",
+          "Bloqueante"
+        ],
+        "answer": "Una tarea a la vez",
+        "hint": "Event loop."
+      },
+      {
+        "question": "¿Qué API permite workers?",
+        "options": [
+          "Service Worker",
+          "Web Worker",
+          "Worker API",
+          "Thread API"
+        ],
+        "answer": "Web Worker",
+        "hint": "Hilos separados."
+      },
+      {
+        "question": "¿Qué diferencia arrow function?",
+        "options": [
+          "this léxico",
+          "Más rápida",
+          "Hoisting",
+          "Scope global"
+        ],
+        "answer": "this léxico",
+        "hint": "No rebind."
+      },
+      {
+        "question": "¿Mayor error en JS moderno?",
+        "options": [
+          "No usar async/await",
+          "Mutar estado",
+          "No tipar",
+          "Usar var"
+        ],
+        "answer": "Mutar estado",
+        "hint": "Frontend moderno."
+      }
+    ]
+  }
+}

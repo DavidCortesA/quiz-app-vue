@@ -1,0 +1,679 @@
+{
+  "questions": {
+    "level_1": [
+      {
+        "question": "¿Qué significa HTML?",
+        "options": [
+          "HyperText Markup Language",
+          "HighText Machine Language",
+          "Hyperlink and Text Markup Language",
+          "Home Tool Markup Language"
+        ],
+        "answer": "HyperText Markup Language",
+        "hint": "Es un lenguaje de marcado, no de programación."
+      },
+      {
+        "question": "¿Cuál es la etiqueta correcta para el encabezado más grande?",
+        "options": [
+          "<h1>",
+          "<h6>",
+          "<header>",
+          "<head>"
+        ],
+        "answer": "<h1>",
+        "hint": "Los encabezados van del h1 al h6."
+      },
+      {
+        "question": "¿Qué etiqueta se usa para crear un enlace?",
+        "options": [
+          "<link>",
+          "<a>",
+          "<href>",
+          "<url>"
+        ],
+        "answer": "<a>",
+        "hint": "Usa el atributo href."
+      },
+      {
+        "question": "¿Cuál etiqueta se usa para insertar una imagen?",
+        "options": [
+          "<image>",
+          "<img>",
+          "<pic>",
+          "<src>"
+        ],
+        "answer": "<img>",
+        "hint": "Es una etiqueta vacía."
+      },
+      {
+        "question": "¿Qué atributo indica la ruta de una imagen?",
+        "options": [
+          "alt",
+          "src",
+          "href",
+          "path"
+        ],
+        "answer": "src",
+        "hint": "Significa source."
+      },
+      {
+        "question": "¿Qué etiqueta define un párrafo?",
+        "options": [
+          "<p>",
+          "<paragraph>",
+          "<text>",
+          "<span>"
+        ],
+        "answer": "<p>",
+        "hint": "Es una etiqueta de bloque."
+      },
+      {
+        "question": "¿Qué etiqueta crea una lista ordenada?",
+        "options": [
+          "<ul>",
+          "<ol>",
+          "<li>",
+          "<list>"
+        ],
+        "answer": "<ol>",
+        "hint": "Usa números por defecto."
+      },
+      {
+        "question": "¿Qué etiqueta se usa para un elemento de lista?",
+        "options": [
+          "<li>",
+          "<ul>",
+          "<ol>",
+          "<item>"
+        ],
+        "answer": "<li>",
+        "hint": "Va dentro de ul u ol."
+      },
+      {
+        "question": "¿Qué etiqueta se usa para texto en negritas (semánticamente incorrecta)?",
+        "options": [
+          "<bold>",
+          "<b>",
+          "<strong>",
+          "<em>"
+        ],
+        "answer": "<b>",
+        "hint": "No aporta significado semántico."
+      },
+      {
+        "question": "¿Qué etiqueta se usa para saltos de línea?",
+        "options": [
+          "<br>",
+          "<lb>",
+          "<hr>",
+          "<break>"
+        ],
+        "answer": "<br>",
+        "hint": "No tiene etiqueta de cierre."
+      },
+
+      {
+        "question": "¿Qué etiqueta define el cuerpo del documento?",
+        "options": [
+          "<head>",
+          "<body>",
+          "<html>",
+          "<main>"
+        ],
+        "answer": "<body>",
+        "hint": "Aquí va el contenido visible."
+      },
+      {
+        "question": "¿Qué etiqueta define el título de la pestaña?",
+        "options": [
+          "<meta>",
+          "<title>",
+          "<head>",
+          "<header>"
+        ],
+        "answer": "<title>",
+        "hint": "Va dentro de head."
+      },
+      {
+        "question": "¿HTML distingue entre mayúsculas y minúsculas?",
+        "options": [
+          "Sí",
+          "No",
+          "Solo en atributos",
+          "Solo en etiquetas"
+        ],
+        "answer": "No",
+        "hint": "HTML no es case-sensitive."
+      },
+      {
+        "question": "¿Cuál es la estructura mínima correcta de HTML?",
+        "options": [
+          "<html><body></body></html>",
+          "<body><html></html></body>",
+          "<head></head>",
+          "<html></html>"
+        ],
+        "answer": "<html><body></body></html>",
+        "hint": "Body va dentro de html."
+      },
+      {
+        "question": "¿Qué atributo describe una imagen?",
+        "options": [
+          "title",
+          "alt",
+          "desc",
+          "name"
+        ],
+        "answer": "alt",
+        "hint": "Importante para accesibilidad."
+      },
+      {
+        "question": "¿Qué etiqueta crea una línea horizontal?",
+        "options": [
+          "<hr>",
+          "<line>",
+          "<br>",
+          "<divider>"
+        ],
+        "answer": "<hr>",
+        "hint": "Es una etiqueta vacía."
+      },
+      {
+        "question": "¿Qué etiqueta agrupa contenido en línea?",
+        "options": [
+          "<div>",
+          "<span>",
+          "<section>",
+          "<p>"
+        ],
+        "answer": "<span>",
+        "hint": "No rompe el flujo del texto."
+      },
+      {
+        "question": "¿Qué etiqueta agrupa contenido en bloque?",
+        "options": [
+          "<span>",
+          "<div>",
+          "<a>",
+          "<em>"
+        ],
+        "answer": "<div>",
+        "hint": "Muy usada junto con CSS."
+      },
+      {
+        "question": "¿Qué atributo abre un enlace en una nueva pestaña?",
+        "options": [
+          "new",
+          "blank",
+          "target",
+          "open"
+        ],
+        "answer": "target",
+        "hint": "Se usa con _blank."
+      },
+      {
+        "question": "¿Qué valor del atributo target abre una nueva pestaña?",
+        "options": [
+          "_new",
+          "_self",
+          "_top",
+          "_blank"
+        ],
+        "answer": "_blank",
+        "hint": "Empieza con guion bajo."
+      }
+    ],
+
+    "level_2": [
+      {
+        "question": "¿Qué etiqueta semántica representa contenido independiente?",
+        "options": [
+          "<div>",
+          "<article>",
+          "<span>",
+          "<section>"
+        ],
+        "answer": "<article>",
+        "hint": "Ideal para posts o blogs."
+      },
+      {
+        "question": "¿Cuál es el propósito de <section>?",
+        "options": [
+          "Agrupar contenido relacionado",
+          "Crear listas",
+          "Insertar imágenes",
+          "Definir encabezados"
+        ],
+        "answer": "Agrupar contenido relacionado",
+        "hint": "Debe tener un heading."
+      },
+      {
+        "question": "¿Qué etiqueta representa navegación?",
+        "options": [
+          "<menu>",
+          "<nav>",
+          "<header>",
+          "<aside>"
+        ],
+        "answer": "<nav>",
+        "hint": "Usada para menús."
+      },
+      {
+        "question": "¿Qué etiqueta contiene metadatos?",
+        "options": [
+          "<meta>",
+          "<data>",
+          "<info>",
+          "<head>"
+        ],
+        "answer": "<meta>",
+        "hint": "No tiene cierre."
+      },
+      {
+        "question": "¿Qué atributo se usa para formularios?",
+        "options": [
+          "method",
+          "action",
+          "type",
+          "Todas las anteriores"
+        ],
+        "answer": "Todas las anteriores",
+        "hint": "Definen cómo se envían los datos."
+      },
+
+      {
+        "question": "¿Qué tipo de input oculta el texto?",
+        "options": [
+          "text",
+          "hidden",
+          "password",
+          "secure"
+        ],
+        "answer": "password",
+        "hint": "Ideal para contraseñas."
+      },
+      {
+        "question": "¿Qué etiqueta se usa para tablas?",
+        "options": [
+          "<table>",
+          "<grid>",
+          "<tr>",
+          "<td>"
+        ],
+        "answer": "<table>",
+        "hint": "Contiene filas y columnas."
+      },
+      {
+        "question": "¿Qué etiqueta define una fila?",
+        "options": [
+          "<td>",
+          "<th>",
+          "<tr>",
+          "<row>"
+        ],
+        "answer": "<tr>",
+        "hint": "Table row."
+      },
+      {
+        "question": "¿Qué etiqueta define una celda de encabezado?",
+        "options": [
+          "<td>",
+          "<th>",
+          "<tr>",
+          "<head>"
+        ],
+        "answer": "<th>",
+        "hint": "Usa texto en negritas por defecto."
+      },
+      {
+        "question": "¿Qué atributo mejora accesibilidad en formularios?",
+        "options": [
+          "name",
+          "placeholder",
+          "label",
+          "for"
+        ],
+        "answer": "for",
+        "hint": "Conecta label con input."
+      },
+
+      {
+        "question": "¿Qué etiqueta representa contenido secundario?",
+        "options": [
+          "<aside>",
+          "<footer>",
+          "<main>",
+          "<header>"
+        ],
+        "answer": "<aside>",
+        "hint": "Relacionado indirectamente."
+      },
+      {
+        "question": "¿Qué etiqueta define el contenido principal?",
+        "options": [
+          "<body>",
+          "<main>",
+          "<section>",
+          "<article>"
+        ],
+        "answer": "<main>",
+        "hint": "Solo debe haber una."
+      },
+      {
+        "question": "¿Qué etiqueta define el pie de página?",
+        "options": [
+          "<footer>",
+          "<bottom>",
+          "<aside>",
+          "<end>"
+        ],
+        "answer": "<footer>",
+        "hint": "Puede repetirse."
+      },
+      {
+        "question": "¿Qué atributo HTML es global?",
+        "options": [
+          "id",
+          "href",
+          "src",
+          "action"
+        ],
+        "answer": "id",
+        "hint": "Puede usarse en cualquier etiqueta."
+      },
+      {
+        "question": "¿Qué atributo permite múltiples valores?",
+        "options": [
+          "id",
+          "class",
+          "name",
+          "type"
+        ],
+        "answer": "class",
+        "hint": "Muy usado en CSS."
+      },
+
+      {
+        "question": "¿Qué etiqueta incrusta video?",
+        "options": [
+          "<media>",
+          "<video>",
+          "<movie>",
+          "<mp4>"
+        ],
+        "answer": "<video>",
+        "hint": "HTML5."
+      },
+      {
+        "question": "¿Qué etiqueta incrusta audio?",
+        "options": [
+          "<sound>",
+          "<audio>",
+          "<mp3>",
+          "<music>"
+        ],
+        "answer": "<audio>",
+        "hint": "También es HTML5."
+      },
+      {
+        "question": "¿Qué atributo permite validación en inputs?",
+        "options": [
+          "required",
+          "checked",
+          "selected",
+          "focus"
+        ],
+        "answer": "required",
+        "hint": "Evita envíos vacíos."
+      },
+      {
+        "question": "¿Qué etiqueta se usa para comentarios?",
+        "options": [
+          "<!-- -->",
+          "//",
+          "/* */",
+          "#"
+        ],
+        "answer": "<!-- -->",
+        "hint": "No se renderiza."
+      },
+      {
+        "question": "¿Qué doctype indica HTML5?",
+        "options": [
+          "<!DOCTYPE html>",
+          "<!HTML5>",
+          "<doctype html5>",
+          "<html5>"
+        ],
+        "answer": "<!DOCTYPE html>",
+        "hint": "Va al inicio del documento."
+      }
+    ],
+
+    "level_3": [
+      {
+        "question": "¿Para qué sirve aria-label?",
+        "options": [
+          "Estilos",
+          "SEO",
+          "Accesibilidad",
+          "Rendimiento"
+        ],
+        "answer": "Accesibilidad",
+        "hint": "Lectores de pantalla."
+      },
+      {
+        "question": "¿Qué atributo describe relaciones de enlaces?",
+        "options": [
+          "rel",
+          "type",
+          "media",
+          "as"
+        ],
+        "answer": "rel",
+        "hint": "Ej: noopener."
+      },
+      {
+        "question": "¿Qué significa HTML semántico?",
+        "options": [
+          "Mejor diseño",
+          "Uso correcto de etiquetas",
+          "Más CSS",
+          "Más JavaScript"
+        ],
+        "answer": "Uso correcto de etiquetas",
+        "hint": "Mejora SEO y accesibilidad."
+      },
+      {
+        "question": "¿Qué etiqueta mejora SEO estructural?",
+        "options": [
+          "<div>",
+          "<span>",
+          "<article>",
+          "<b>"
+        ],
+        "answer": "<article>",
+        "hint": "Tiene significado."
+      },
+
+      {
+        "question": "¿Qué API HTML permite arrastrar elementos?",
+        "options": [
+          "Canvas",
+          "Drag and Drop",
+          "Web Storage",
+          "Geolocation"
+        ],
+        "answer": "Drag and Drop",
+        "hint": "HTML5."
+      },
+      {
+        "question": "¿Qué atributo evita ataques de tabnabbing?",
+        "options": [
+          "noopener",
+          "nofollow",
+          "noreferrer",
+          "secure"
+        ],
+        "answer": "noopener",
+        "hint": "Usado con target _blank."
+      },
+      {
+        "question": "¿Qué etiqueta define datos estructurados?",
+        "options": [
+          "<data>",
+          "<meta>",
+          "<script>",
+          "<template>"
+        ],
+        "answer": "<data>",
+        "hint": "Asocia valor y contenido."
+      },
+      {
+        "question": "¿Qué es <template>?",
+        "options": [
+          "CSS",
+          "HTML reutilizable",
+          "JS",
+          "SEO"
+        ],
+        "answer": "HTML reutilizable",
+        "hint": "No se renderiza."
+      },
+      {
+        "question": "¿Qué etiqueta permite gráficos 2D?",
+        "options": [
+          "<svg>",
+          "<canvas>",
+          "<chart>",
+          "<graph>"
+        ],
+        "answer": "<canvas>",
+        "hint": "Controlado con JS."
+      },
+      {
+        "question": "¿Qué diferencia hay entre canvas y svg?",
+        "options": [
+          "SVG es vectorial",
+          "Canvas es DOM",
+          "Canvas es accesible",
+          "No hay diferencia"
+        ],
+        "answer": "SVG es vectorial",
+        "hint": "Escalabilidad."
+      },
+
+      {
+        "question": "¿Qué atributo define carga diferida?",
+        "options": [
+          "async",
+          "lazy",
+          "loading",
+          "defer"
+        ],
+        "answer": "loading",
+        "hint": "Útil para imágenes."
+      },
+      {
+        "question": "¿Qué valor activa lazy loading?",
+        "options": [
+          "true",
+          "auto",
+          "lazy",
+          "defer"
+        ],
+        "answer": "lazy",
+        "hint": "Optimiza rendimiento."
+      },
+      {
+        "question": "¿Qué etiqueta permite shadow DOM?",
+        "options": [
+          "<slot>",
+          "<template>",
+          "<shadow>",
+          "<component>"
+        ],
+        "answer": "<slot>",
+        "hint": "Web Components."
+      },
+      {
+        "question": "¿Qué estándar define Web Components?",
+        "options": [
+          "HTML4",
+          "HTML5",
+          "ECMAScript",
+          "W3C"
+        ],
+        "answer": "HTML5",
+        "hint": "Incluye templates."
+      },
+      {
+        "question": "¿Qué atributo define contenido editable?",
+        "options": [
+          "editable",
+          "contenteditable",
+          "modify",
+          "edit"
+        ],
+        "answer": "contenteditable",
+        "hint": "Convierte texto en input."
+      },
+
+      {
+        "question": "¿Qué etiqueta mejora rendimiento crítico?",
+        "options": [
+          "<link rel='preload'>",
+          "<script defer>",
+          "<meta charset>",
+          "<base>"
+        ],
+        "answer": "<link rel='preload'>",
+        "hint": "Carga anticipada."
+      },
+      {
+        "question": "¿Qué atributo define CSP?",
+        "options": [
+          "http-equiv",
+          "content",
+          "policy",
+          "secure"
+        ],
+        "answer": "http-equiv",
+        "hint": "Seguridad."
+      },
+      {
+        "question": "¿Qué etiqueta define base URL?",
+        "options": [
+          "<url>",
+          "<base>",
+          "<meta>",
+          "<link>"
+        ],
+        "answer": "<base>",
+        "hint": "Afecta rutas relativas."
+      },
+      {
+        "question": "¿Qué significa HTML declarativo?",
+        "options": [
+          "Define estructura",
+          "Ejecuta lógica",
+          "Maneja estado",
+          "Procesa datos"
+        ],
+        "answer": "Define estructura",
+        "hint": "No controla comportamiento."
+      },
+      {
+        "question": "¿Cuál es el mayor error en HTML moderno?",
+        "options": [
+          "Usar div para todo",
+          "Usar CSS",
+          "Usar JS",
+          "Usar clases"
+        ],
+        "answer": "Usar div para todo",
+        "hint": "Ignora semántica."
+      }
+    ]
+  }
+}
