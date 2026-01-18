@@ -1,26 +1,23 @@
 <script setup lang="ts">
 defineProps<{
   options: string[]
-  selected: number | null
+  selected: string | null
 }>()
 
-const emit = defineEmits<{
-  (e: 'select', index: number): void
+defineEmits<{
+  (e: 'select', option: string): void
 }>()
 </script>
 
 <template>
-  <div class="grid gap-4">
-    <button
-      v-for="(opt, i) in options"
-      :key="i"
-      @click="emit('select', i)"
-      class="p-4 rounded-xl border text-white"
-      :class="{
-        'bg-white text-black': selected === i
-      }"
+  <div class="grid gap-4 mt-6">
+    <BaseCard
+      v-for="opt in options"
+      :key="opt"
+      :active="selected === opt"
+      @click="$emit('select', opt)"
     >
       {{ opt }}
-    </button>
+    </BaseCard>
   </div>
 </template>

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-defineProps<{ text: string }>()
+defineProps<{ question: string }>()
 </script>
 
 <template>
-  <h2 class="text-xl text-white font-bold mb-6">
-    {{ text }}
+  <h2 class="text-white text-xl font-bold mb-4">
+    {{ question }}
   </h2>
 </template>

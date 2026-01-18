@@ -13,9 +13,10 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/quiz',
+      path: '/quiz/:asignature/:level',
       name: 'quiz',
       component: QuizView,
+      props: true,
     },
     {
       path: '/result',

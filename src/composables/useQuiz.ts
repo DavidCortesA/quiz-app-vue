@@ -1,33 +1,42 @@
 import { ref, computed } from 'vue'
 
-export function useQuiz(questions: any[]) {
-  const currentIndex = ref(0)
-  const selected = ref<number | null>(null)
+export interface Question {
+  question: string
+  options: string[]
+  answer: string
+  hint?: string
+}
+
+export function useQuiz(questions: Question[]) {
+  const current = ref(0)
+  const selected = ref<string | null>(null)
   const score = ref(0)
 
-  const currentQuestion = computed(() => questions[currentIndex.value])
-  const isLast = computed(() => currentIndex.value === questions.length - 1)
+  const question = computed(() => questions[current.value])
+  const total = questions.length
+  const isLast = computed(() => current.value === total - 1)
 
-  const selectOption = (index: number) => {
-    selected.value = index
+  const select = (option: string) => {
+    selected.value = option
   }
 
   const next = () => {
-    if (selected.value === currentQuestion.value.answer) {
+    if (selected.value === question?.value.answer) {
       score.value++
     }
 
     selected.value = null
-    if (!isLast.value) currentIndex.value++
+    current.value++
   }
 
   return {
-    currentIndex,
-    currentQuestion,
+    current,
+    question,
+    total,
     selected,
     score,
     isLast,
-    selectOption,
-    next
+    select,
+    next,
   }
 }

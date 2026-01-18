@@ -1,20 +1,18 @@
 import { ref, onUnmounted } from 'vue'
 
-export function useTimer(seconds = 20) {
-  const timeLeft = ref(seconds)
+export function useTimer(seconds = 60) {
+  const time = ref(seconds)
   let interval: number
 
   const start = () => {
-    interval = setInterval(() => {
-      if (timeLeft.value > 0) timeLeft.value--
+    interval = window.setInterval(() => {
+      if (time.value > 0) time.value--
     }, 1000)
   }
 
-  const reset = () => {
-    timeLeft.value = seconds
-  }
+  const stop = () => clearInterval(interval)
 
-  onUnmounted(() => clearInterval(interval))
+  onUnmounted(stop)
 
-  return { timeLeft, start, reset }
+  return { time, start, stop }
 }
