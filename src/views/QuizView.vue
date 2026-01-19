@@ -1,9 +1,13 @@
+<!-- eslint-disable @typescript-eslint/no-explicit-any -->
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
-
+// IMPORTS
+import { useRoute, useRouter } from 'vue-router'
+import { ref } from 'vue'
+// COMPOSABLES
 import { useQuiz } from '@/composables/useQuiz'
 import { useTimer } from '@/composables/useTimer'
 
+// COMPONENTS
 import QuizQuestion from '@/components/quiz/QuizQuestion.vue'
 import QuizOptions from '@/components/quiz/QuizOptions.vue'
 import QuizNavigation from '@/components/quiz/QuizNavigation.vue'
@@ -21,6 +25,8 @@ const route = useRoute()
 const asignature = route.params.asignature as string
 const level = route.params.level as 'basic' | 'medium' | 'hard'
 
+const showHint = ref(false)
+
 const levelMap = {
   basic: 'level_1',
   medium: 'level_2',
@@ -30,8 +36,8 @@ const levelMap = {
 const dataMap: Record<string, any> = {
   HTML: html,
   CSS: css,
-  JAVASCRIPT: javascript,
-  ACCESIBILIDAD: accesibilidad,
+  JavaScript: javascript,
+  Accesibilidad: accesibilidad,
 }
 
 const questions =
@@ -40,14 +46,26 @@ const questions =
 
 const quiz = useQuiz(questions)
 const timer = useTimer(60)
-console.log(quiz.question)
+
+const handleHint = () => {
+  showHint.value = !showHint.value
+}
+
+const handleNextButton = () => {
+  showHint.value = false;
+  quiz.next();
+}
+
+const handleInicio = () => {
+  useRouter().back();
+}
 
 timer.start()
 </script>
 
 <template>
   <section
-    class="min-h-screen p-6 bg-gradient-to-tl from-[#0F2027] via-[#203A43] to-[#2C5364]"
+    class="min-h-screen p-6 bg-linear-to-tl from-[#0F2027] via-[#203A43] to-[#2C5364] flex flex-col items-start justify-center gap-5"
   >
     <QuizNavigation
       :current="quiz.current.value"
@@ -56,28 +74,43 @@ timer.start()
 
     <QuizTime :time="timer.time.value" />
 
-    <QuizQuestion :question="quiz?.question?.value?.question" />
+    <div class="flex flex-row flex-wrap w-full mb-5">
+      <QuizQuestion :question="quiz.question?.value?.question || ''" />
 
-    <QuizOptions
-      :options="quiz.question?.value?.options"
-      :selected="quiz.selected"
-      @select="quiz.select"
-    />
+      <QuizOptions
+        :options="quiz.question?.value?.options || []"
+        :selected="quiz?.selected.value ?? ''"
+        @select="quiz.select"
+      />
+    </div>
+
+    <BaseButton @click="handleHint" class="w-full mt-5 text-neutral-500" variant="primary" v-if="!showHint.valueOf()">
+      💡 Mostart Pista
+    </BaseButton>
+
 
     <!-- HINT -->
-    <p
-      v-if="quiz.question.value?.hint"
-      class="mt-4 text-sm italic text-neutral-300"
+    <BaseButton
+      @click="handleHint"
+      variant="ghost"
+      v-else-if="quiz.question.value?.hint && showHint.valueOf()"
+      class="mt-5 text-sm italic text-neutral-300 w-full text-center rounded-2xl border p-6"
     >
       💡 {{ quiz.question?.value.hint }}
-    </p>
+    </BaseButton>
 
-    <div class="flex justify-end mt-6">
+    <div class="flex justify-end mt-6 w-full gap-5">
+      <BaseButton
+        variant="ghost"
+        @click="handleInicio"
+      >
+        Ir a Inicio
+      </BaseButton>
       <BaseButton
         :disabled="quiz.selected === null"
-        @click="quiz.next"
+        @click="handleNextButton"
       >
-        {{ quiz.isLast ? 'Finalizar' : 'Siguiente' }}
+        {{ quiz.isLast.value ? 'Finalizar' : 'Siguiente' }}
       </BaseButton>
     </div>
   </section>

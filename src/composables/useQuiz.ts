@@ -21,7 +21,7 @@ export function useQuiz(questions: Question[]) {
   }
 
   const next = () => {
-    if (selected.value === question?.value.answer) {
+    if (selected.value === question?.value?.answer) {
       score.value++
     }
 

@@ -3,6 +3,7 @@
   import { useRouter } from 'vue-router';
   import { Code, Braces, FileBraces, ChartNoAxesGantt, Brain, BrainCog, BrainCircuit} from 'lucide-vue-next';
   import CardItem from '@/components/home/CardItem.vue';
+import BaseButton from '@/components/ui/BaseButton.vue';
 
   const router = useRouter();
   const asignature = ref<string | null>(null)
@@ -40,7 +41,7 @@
     router.push({
       name: 'quiz',
       params: {
-        asignature: asignature.value.toUpperCase(),
+        asignature: asignature.value,
         level: level.value
       }
     })
@@ -80,12 +81,12 @@
       />
     </div>
     <div class="flex gap-5 flex-row flex-wrap mt-5">
-      <button v-if="asignature" class="px-6 py-3 rounded-xl bg-orange-400 border border-neutral-200 text-white font-semibold disabled:opacity-50 hover:accent-amber" :disabled="!asignature" @click="deleteAsignature">
+      <BaseButton v-if="asignature" :disabled="!asignature" @click="deleteAsignature" variant="ghost">
         Cambiar Asignatura
-      </button>
-      <button v-if="level && asignature" class="px-6 py-3 rounded-xl border border-neutral-200 text-white font-semibold disabled:opacity-50 hover:accent-amber" :disabled="!asignature || !level" @click="starQuiz">
-        Comenzar Quiz
-      </button>
+      </BaseButton>
+      <BaseButton v-if="level" :disabled="!level" @click="starQuiz" variant="primary">
+        Iniciar Quiz
+      </BaseButton>
     </div>
   </section>
 </template>

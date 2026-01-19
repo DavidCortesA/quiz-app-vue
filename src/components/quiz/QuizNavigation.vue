@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import ProgressBar from '@/components/ui/ProgressBar.vue';
+
 defineProps<{ current: number; total: number }>()
 </script>
 
 <template>
-  <BaseProgressBar :value="current + 1" :max="total" />
+  <ProgressBar :value="current + 1" :max="total" />
 </template>

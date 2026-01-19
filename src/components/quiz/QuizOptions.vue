@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import BaseCard from '@/components/ui/BaseCard.vue';
 defineProps<{
   options: string[]
   selected: string | null
@@ -10,7 +11,7 @@ defineEmits<{
 </script>
 
 <template>
-  <div class="grid gap-4 mt-6">
+  <div class="grid gap-4 mt-6 w-full md:w-1/2">
     <BaseCard
       v-for="opt in options"
       :key="opt"
