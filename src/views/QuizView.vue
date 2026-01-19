@@ -21,6 +21,7 @@ import javascript from '@/data/javascript.json'
 import accesibilidad from '@/data/accessibility.json'
 
 const route = useRoute()
+const router = useRouter()
 
 const asignature = route.params.asignature as string
 const level = route.params.level as 'basic' | 'medium' | 'hard'
@@ -57,7 +58,7 @@ const handleNextButton = () => {
 }
 
 const handleInicio = () => {
-  useRouter().back();
+  router.push({ name: 'home' })
 }
 
 timer.start()
@@ -78,28 +79,28 @@ timer.start()
 
     <div class="flex flex-row flex-wrap w-full mb-5">
       <QuizQuestion :question="quiz.question?.value?.question || ''" />
+      <div class="flex flex-col w-full md:w-1/2 mt-5">
+        <QuizOptions
+          :options="quiz.question?.value?.options || []"
+          :selected="quiz?.selected.value ?? ''"
+          @select="quiz.select"
+        />
+        <BaseButton @click="handleHint" class="w-full mt-5 pt-2" variant="ghost" v-if="!showHint.valueOf()">
+          💡 Mostart Pista
+        </BaseButton>
 
-      <QuizOptions
-        :options="quiz.question?.value?.options || []"
-        :selected="quiz?.selected.value ?? ''"
-        @select="quiz.select"
-      />
+        <!-- HINT -->
+        <BaseButton
+          @click="handleHint"
+          variant="ghost"
+          v-else-if="quiz.question.value?.hint && showHint.valueOf()"
+          class="mt-5 text-sm italic text-neutral-300 w-full text-center rounded-2xl border p-10"
+        >
+          💡 {{ quiz.question?.value.hint }}
+        </BaseButton>
+      </div>
     </div>
 
-    <BaseButton @click="handleHint" class="w-full mt-5 text-neutral-500" variant="primary" v-if="!showHint.valueOf()">
-      💡 Mostart Pista
-    </BaseButton>
-
-
-    <!-- HINT -->
-    <BaseButton
-      @click="handleHint"
-      variant="ghost"
-      v-else-if="quiz.question.value?.hint && showHint.valueOf()"
-      class="mt-5 text-sm italic text-neutral-300 w-full text-center rounded-2xl border p-6"
-    >
-      💡 {{ quiz.question?.value.hint }}
-    </BaseButton>
 
     <div class="flex justify-end mt-6 w-full gap-5">
       <BaseButton

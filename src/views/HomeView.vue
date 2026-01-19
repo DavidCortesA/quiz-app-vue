@@ -3,7 +3,7 @@
   import { useRouter } from 'vue-router';
   import { Code, Braces, FileBraces, ChartNoAxesGantt, Brain, BrainCog, BrainCircuit} from 'lucide-vue-next';
   import CardItem from '@/components/home/CardItem.vue';
-import BaseButton from '@/components/ui/BaseButton.vue';
+  import BaseButton from '@/components/ui/BaseButton.vue';
 
   const router = useRouter();
   const asignature = ref<string | null>(null)
