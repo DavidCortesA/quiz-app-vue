@@ -19,7 +19,7 @@ const percentage = computed(() =>
     :aria-valuemax="max"
   >
     <div
-      class="h-full bg-white transition-all duration-300"
+      class="h-full bg-white transition-all duration-300 w-9/12"
       :style="{ width: `${percentage}%` }"
     />
   </div>

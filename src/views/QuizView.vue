@@ -65,14 +65,16 @@ timer.start()
 
 <template>
   <section
-    class="min-h-screen p-6 bg-linear-to-tl from-[#0F2027] via-[#203A43] to-[#2C5364] flex flex-col items-start justify-center gap-5"
+    class="min-h-screen p-6 bg-linear-to-tl from-[#0F2027] via-[#203A43] to-[#2C5364] flex flex-col items-start justify-between gap-5"
   >
     <QuizNavigation
       :current="quiz.current.value"
       :total="quiz.total"
     />
-
-    <QuizTime :time="timer.time.value" />
+    <div class="flex flex-row flex-nowrap items-center justify-between w-full">
+      <QuizTime :time="timer.time.value" />
+      <div class="text-white font-mono">{{ quiz.current.value + 1 }} / {{ quiz.total }}</div>
+    </div>
 
     <div class="flex flex-row flex-wrap w-full mb-5">
       <QuizQuestion :question="quiz.question?.value?.question || ''" />
@@ -103,11 +105,14 @@ timer.start()
       <BaseButton
         variant="ghost"
         @click="handleInicio"
+        class="w-1/2"
       >
         Ir a Inicio
       </BaseButton>
       <BaseButton
         :disabled="quiz.selected === null"
+        variant="primary"
+        class="w-1/2"
         @click="handleNextButton"
       >
         {{ quiz.isLast.value ? 'Finalizar' : 'Siguiente' }}
